@@ -1,0 +1,6 @@
+<%= link_to 'Criar nova lista', new_recipe_list_path %>
+
+<h1>Tipos de receitas</h1>
+<% @recipe_lists.each do |recipe_list| %>
+  <h4><%= recipe_list.name %></h4>
+<% end %>
